@@ -3,7 +3,7 @@
       <div class="boards">
         <div v-for="(project, index) in projects" :key="index" class="board" :class="{ 'archived': project.archived }">
           <div class="text-center uppercase">
-            <b>{{ project.name }}</b>
+            <b class="font-mono">{{ project.name }}</b>
             <!-- Button to edit project name -->
             <button @click="editProjectName(index)" class="ml-2">
               <img src="../assets/download.png" class="h-auto float-right w-auto max-h-4 max-w-full">
